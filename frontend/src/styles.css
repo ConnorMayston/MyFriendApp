@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.app-pointer{
+  cursor: pointer;
+}
+
+.hover:hover{
+  background-color: #19aa8d;
+}

@@ -1,0 +1,65 @@
+<div class="signup-form">
+  <h2>Sign Up</h2>
+  <hr>
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Username" required="required" [(ngModel)]="username">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Password" required="required" [(ngModel)]="password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Retype Password" required="required"
+             [(ngModel)]="passwordCheck">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="First Name" required="required" [(ngModel)]="firstName">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Last Name" required="required" [(ngModel)]="lastName">
+    </div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary btn-lg" [disabled]="!canSubmit" (click)="onSubmit()">Sign Up</button>
+  </div>
+  <div class="text-center">Already have an account? <a routerLink="">Login here</a></div>
+</div>
+
+<!--<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">-->
+<!--  <div class="form-group">-->
+<!--    <label for="inputUsername">Username</label>-->
+<!--    <input type="text" class="form-control" placeholder="Username"  id="inputUsername">-->
+<!--  </div>-->
+<!--  <div class="form-row">-->
+<!--    <div class="form-group col-md-6">-->
+<!--      <label for="inputPassword">Password</label>-->
+<!--      <input type="password" class="form-control" placeholder="Password"  id="inputPassword">-->
+<!--    </div>-->
+<!--    <div class="form-group col-md-6">-->
+<!--      <label for="inputPasswordCheck">Retype Password</label>-->
+<!--      <input type="password" class="form-control" placeholder="Retype password" -->
+<!--             id="inputPasswordCheck">-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <div class="form-row">-->
+<!--    <div class="form-group col-md-6">-->
+<!--      <label for="inputFirstName">First Name</label>-->
+<!--      <input type="text" class="form-control" placeholder="First Name"  id="inputFirstName">-->
+<!--    </div>-->
+
+<!--    <div class="form-group col-md-6">-->
+<!--      <label for="inputLastName">Last Name</label>-->
+<!--      <input type="text" class="form-control" placeholder="Last Name"  id="inputLastName">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--</form>-->
