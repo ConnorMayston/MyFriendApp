@@ -21,10 +21,6 @@ export class RegistrationPageComponent {
   constructor(private http: HttpService, private modal: ModalService, private router: Router) {
   }
 
-  get canSubmit() {
-    return this.username.length > 0 && this.firstName.length > 0 && this.lastName.length > 0 && this.password.length >= 8 && this.password == this.passwordCheck;
-  }
-
   onSubmit() {
     if (this.username.length > 0 && this.firstName.length > 0 && this.lastName.length > 0 && this.password.length >= 8) {
       if (this.password == this.passwordCheck) {
