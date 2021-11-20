@@ -77,7 +77,7 @@ class UserServiceImpl @Autowired constructor(
         return if (query == "blank") {
             userRepository.findAll(PageRequest.of(pageNumber, 10, Sort.by(Sort.Direction.DESC, "username"))).content
         } else {
-            userRepository.findAllByUsername(
+            userRepository.findAllByUsernameContaining(
                 query,
                 PageRequest.of(pageNumber, 10, Sort.by(Sort.Direction.DESC, "username"))
             )

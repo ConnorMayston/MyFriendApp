@@ -7,5 +7,5 @@ import org.springframework.data.domain.Pageable
 interface UserRepository : JpaRepository<User, String>{
     fun existsByUsername(username: String): Boolean
     fun findByUsername(username: String): User
-    fun findAllByUsername(username: String, pageable: Pageable): List<User>
+    fun findAllByUsernameContaining(username: String, pageable: Pageable): List<User>
 }
